@@ -1,1 +1,1 @@
-1st git project
+run "ng serve --open"

@@ -34,8 +34,15 @@
 </div>
 </div>
 
-<div *ngIf="true">
+<div *ngIf="getKillPercent">
     <h2>Kill Percent</h2>
+    <button (click)="getKillPercent()">
+        Get Kill Percent
+        
+    </button>
+    
+   
+    
     
 </div>
 

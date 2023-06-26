@@ -70,10 +70,14 @@ getStages(): void{
     .subscribe(killPercent => {
       console.log("pls work")
       
+    
+      
+      
       this.killPercent = killPercent
       console.log(killPercent);
     })
 
+    
     
   }
 

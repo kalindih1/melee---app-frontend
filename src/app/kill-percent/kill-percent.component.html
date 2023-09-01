@@ -1,15 +1,31 @@
+<div class="container">
 <h2>Characters</h2>
+
 <ul>
 <li *ngFor="let character of characters">
     <button [class.selected]="character === selectedCharacter" type="button"
     (click)="onCharacterSelect(character)">
-<span class="name">{{character.CharacterName}}</span>
+    <div class="img-gallery">
+        <div class="column">
+    <img style="height: 250px;" class="bird" src= {{character.CharacterImg}}>
+    </div>
+    </div>
+
 </button>
 </li>
 </ul>
+</div>
+
+<!-- Make map of pictures to name
+    -Display each picture
+    -Each picture is mapped to value
+-->
+
+
 
 <div *ngIf="selectedCharacter">
     <h2>{{selectedCharacter.CharacterName}} </h2>
+    
 <div>
 <label for="character-name">Character Name: </label>
 <input id="character-name" [(ngModel)]="selectedCharacter.CharacterName" placeholder="characterName">
@@ -21,7 +37,7 @@
     <li *ngFor="let stage of stages">
         <button [class.selected]="stage === selectedStage" type="button"
         (click)="onStageSelect(stage)">
-    <span class="name">{{stage.StageName}}</span>
+        <img style="height: 300px;" class="bird" src= {{stage.StageImg}}>
     </button>
     </li>
 </ul>
@@ -37,6 +53,7 @@
 <div *ngIf="getKillPercent">
     <h2>Kill Percent</h2>
     <button (click)="getKillPercent()">
+        
         Get Kill Percent
         
     </button>

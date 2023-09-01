@@ -23,6 +23,7 @@ export class KillPercentComponent implements OnInit {
   stages: Stage[] = [];
 
   killPercent: any ="";
+  //figure out how to make this show the number
 
 
 
@@ -61,6 +62,8 @@ getStages(): void{
   }
 
   getKillPercent(): void{
+
+
     let nonNullableCharacterName: string = this.selectedCharacter?.CharacterName!;
     let nonNullableStageName: string = this.selectedStage?.StageName!;
     console.log(nonNullableCharacterName)
@@ -69,11 +72,13 @@ getStages(): void{
     this.apicall.getKillPercent(nonNullableCharacterName, nonNullableStageName)
     .subscribe(killPercent => {
       console.log("pls work")
-      
-    
-      
+      console.log(nonNullableCharacterName, nonNullableStageName)
       
       this.killPercent = killPercent
+    
+      alert(this.killPercent);
+      
+      
       console.log(killPercent);
     })
 

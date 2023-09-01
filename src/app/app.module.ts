@@ -19,6 +19,8 @@ import { AppComponent } from './app.component';
 import { KillPercentComponent } from './kill-percent/kill-percent.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageComponent } from './home-page/home-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MockPracticeComponent } from './mock-practice/mock-practice.component';
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     AppComponent,
     KillPercentComponent,
     HomePageComponent,
+    MockPracticeComponent,
     
   ],
   imports: [
@@ -45,6 +48,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
+    BrowserAnimationsModule,
     
   ],
   providers: [],

@@ -22,3 +22,26 @@
     align-items: stretch;
     height: 1.8em;
   } */
+ *{
+  padding: 0;
+  margin: 0;
+ }
+
+ .container{
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+ }
+
+ .img-gallery{
+  display: flex;
+  gap: 20px;
+ }
+
+ .column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+

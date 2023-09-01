@@ -22,26 +22,27 @@
     align-items: stretch;
     height: 1.8em;
   } */
- *{
+* {
   padding: 0;
   margin: 0;
- }
+}
 
- .container{
+.container {
   max-width: 1224px;
   width: 90%;
   margin: auto;
   padding: 40px 0;
- }
+}
 
- .img-gallery{
-  display: flex;
-  gap: 20px;
- }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px;
+}
+.grid-item {
+  border: 8px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
 
- .column{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
- }
 

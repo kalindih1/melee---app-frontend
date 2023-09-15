@@ -36,15 +36,18 @@
     </div>
 </div>
 
-<h3>Stages</h3>
-<ul>
-    <li *ngFor="let stage of stages">
-        <button [class.selected]="stage === selectedStage" type="button" (click)="onStageSelect(stage)">
-            <img style="height: 300px;" class="bird" src={{stage.StageImg}}>
-        </button>
-    </li>
-</ul>
-
+<div class="StageContainer">
+    <h3>Stages</h3>
+    <ul>
+        <div class="stage-grid-container">
+            <div class="stage-grid-item" *ngFor="let stage of stages">
+                <button [class.selected]="stage === selectedStage" type="button" (click)="onStageSelect(stage)">
+                    <img style="height: 300px;" class="bird" src={{stage.StageImg}}>
+                </button>
+            </div>
+        </div>
+    </ul>
+</div>
 <div *ngIf="selectedStage">
     <h2>{{selectedStage.StageName}} </h2>
     <div>

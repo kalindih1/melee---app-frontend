@@ -28,21 +28,40 @@
 }
 
 .container {
-  max-width: 1224px;
-  width: 90%;
+  max-width: 1000px;
+  width: 95%;
   margin: auto;
-  padding: 40px 0;
+  padding: 75px 0;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 25px;
 }
 .grid-item {
   border: 8px solid #000000;
   padding: 10px;
   text-align: center;
 }
+
+.Stagecontainer {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.stage-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px;
+}
+.stage-grid-item {
+  border: 8px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+
 
 
